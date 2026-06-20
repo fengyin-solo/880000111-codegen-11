@@ -2,6 +2,7 @@ export const harborNavigation = [
   { label: '运行总览', to: '/' },
   { label: '采样窗口', to: '/windows' },
   { label: '检疫记录', to: '/records' },
+  { label: '晚班复核', to: '/night-review' },
 ]
 
 export const harborSummary = {
@@ -87,6 +88,41 @@ export const harborRecords = [
     status: 'pending',
     assignee: '苏蔚',
     note: '外轮代理尚未回传舱图。',
+  },
+  {
+    shipName: '远洋之星',
+    sampleCode: 'BW-2406-D2',
+    status: 'recheck',
+    assignee: '王岚',
+    note: '荧光检测异常，需重新采样复核。',
+  },
+  {
+    shipName: '港达 88',
+    sampleCode: 'BW-2406-E1',
+    status: 'pending',
+    assignee: '赵冉',
+    note: '浊度数据缺失，待补录。',
+  },
+  {
+    shipName: 'Sea Horizon',
+    sampleCode: 'BW-2406-F3',
+    status: 'recheck',
+    assignee: '陈策',
+    note: '盐度读数偏差超过阈值，需复检。',
+  },
+  {
+    shipName: '明州 12',
+    sampleCode: 'BW-2406-G1',
+    status: 'pending',
+    assignee: '苏蔚',
+    note: '采样照片未上传，待补录。',
+  },
+  {
+    shipName: 'Long Voyage',
+    sampleCode: 'BW-2406-H2',
+    status: 'recheck',
+    assignee: '王岚',
+    note: '微生物计数疑似超标，需复核。',
   },
 ]
 
